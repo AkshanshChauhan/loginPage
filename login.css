@@ -1,0 +1,163 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(186, 205, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainBox {
+    width: calc(100% - 40px);
+    height: calc(100% - 100px);
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+}
+
+.leftBox {
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding-top: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 50px;
+    display: grid;
+    gap: 20px;
+    grid-template-rows: 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px;
+}
+
+.loginText {
+    font-weight: bold;
+}
+
+.loginSubText {
+    font-size: small;
+    opacity: 60%;
+}
+
+input {
+    border-radius: 50px;
+    padding: 10px;
+    border: 0px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.419);
+    padding: 15px;
+}
+
+.loginWithGoogleButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    border: 0px;
+    outline: 0px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.375);
+    padding: 15px;
+}
+
+.lineWithText {
+    opacity: 60%;
+    text-align: center;
+}
+
+.reme {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.forgot {
+    font-size: small;
+    float: right;
+    width: 100pt;
+    text-align: right;
+    text-decoration: none;
+}
+
+.loginButton {
+    background-color: rgb(72, 0, 255);
+    padding: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 0px;
+    outline: 0px;
+}
+
+.registered {
+    display: flex;
+    gap: 10px;
+    font-size: small;
+}
+
+.registered a {
+    text-decoration: none;
+}
+
+.footer {
+    font-size: small;
+    opacity: 60%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.rightBox {
+    width: 50%;
+    background-color: rgb(47, 47, 255);
+    background-image: url('https://bgfons.com/uploads/paint/paint_texture2105.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 50px;
+    animation: backimg 5s ease-in-out 0s reverse;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text1 {
+    animation: text 5s ease-in-out -2s reverse;
+}
+
+.text2 {
+    animation: text 5s ease-in-out -1s reverse;
+}
+
+.text3 {
+    animation: text 5s ease-in-out 0s reverse;
+}
+
+@keyframes text {
+    100% {
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+}
+
+img {
+    mix-blend-mode: lighten;
+    filter: invert(1);
+}
+
+@keyframes backimg {
+    100% {
+        background-position-x: -20px;
+    }
+}

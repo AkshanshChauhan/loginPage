@@ -151,10 +151,6 @@ input {
     }
 }
 
-img {
-    mix-blend-mode: lighten;
-    filter: invert(1);
-}
 
 @keyframes backimg {
     100% {

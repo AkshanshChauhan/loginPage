@@ -23,13 +23,15 @@ body {
 .leftBox {
     width: 50%;
     background-color: rgb(255, 255, 255);
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
+    border-radius: 10px;
     padding-top: 50px;
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 50px;
     display: grid;
+    grid-template-columns: auto;
+    max-width: 300px;
+    min-width: 230px;
     gap: 20px;
     grid-template-rows: 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px;
 }
@@ -111,27 +113,6 @@ input {
     align-items: flex-end;
 }
 
-.rightBox {
-    width: 50%;
-    background-color: rgb(47, 47, 255);
-    background-image: url('https://bgfons.com/uploads/paint/paint_texture2105.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    padding: 50px;
-    animation: backimg 5s ease-in-out 0s reverse;
-    font-size: xx-large;
-    font-weight: bolder;
-    text-align: center;
-    color: white;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
 .text1 {
     animation: text 5s ease-in-out -2s reverse;
 }
@@ -150,7 +131,6 @@ input {
         opacity: 0;
     }
 }
-
 
 @keyframes backimg {
     100% {
